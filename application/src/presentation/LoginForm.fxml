@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox id="vpane" minHeight="400.0" minWidth="400.0" prefHeight="400.0" prefWidth="400.0" style="-fx-background-color: FFFFFF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.LoginForm">
+   <children>
+      <Label fx:id="txx" alignment="BASELINE_CENTER" contentDisplay="BOTTOM" prefHeight="94.0" prefWidth="411.0" stylesheets="@st.css" text="Welcome to Library System" textFill="WHITE">
+         <font>
+            <Font name="Lucida Sans Demibold" size="18.0" />
+         </font></Label>
+      <HBox alignment="CENTER" prefHeight="52.0" prefWidth="289.0">
+         <children>
+            <Label fx:id="txtLoginError" textFill="#eb0707">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" depthTest="DISABLE" prefHeight="52.0" prefWidth="289.0">
+         <children>
+            <TextField fx:id="txtUsername" minHeight="40.0" minWidth="220.0" prefHeight="25.0" prefWidth="153.0" promptText="Username">
+               <HBox.margin>
+                  <Insets bottom="10.0" />
+               </HBox.margin>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets></TextField>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="37.0" prefWidth="185.0">
+         <children>
+            <PasswordField fx:id="txtPassword" minHeight="40.0" minWidth="220.0" prefHeight="25.0" prefWidth="153.0" promptText="Password" />
+         </children>
+      </HBox>
+      <HBox prefHeight="96.0" prefWidth="400.0">
+         <children>
+            <Pane prefHeight="188.0" prefWidth="0.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <ImageView fitHeight="107.0" fitWidth="115.0" layoutY="64.0" pickOnBounds="true" smooth="false">
+                     <image>
+                        <Image url="@bookimage.jpg" />
+                     </image>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ImageView>
+               </children></Pane>
+            <Label fx:id="lblMessage" alignment="CENTER" prefHeight="17.0" prefWidth="143.0" textFill="RED" />
+            <Button fx:id="btnLogin" alignment="CENTER" contentDisplay="CENTER" defaultButton="true" minHeight="30.0" minWidth="80.0" mnemonicParsing="false" onAction="#btnLoginAction" prefHeight="25.0" prefWidth="46.0" stylesheets="@st.css" text="Login" textFill="WHITE">
+               <HBox.margin>
+                  <Insets top="15.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Pane HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="10.0" layoutY="90.0" prefHeight="52.0" prefWidth="289.0">
+         <children>
+            <Label fx:id="txtLoginError1" textFill="#eb0707">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+         </children>
+         <VBox.margin>
+            <Insets bottom="40.0" />
+         </VBox.margin>
+      </HBox>
+      <Pane prefHeight="17.0" prefWidth="400.0" style="-fx-background-color: EE2E12;" />
+   </children>
+   <opaqueInsets>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </opaqueInsets>
+</VBox>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="312.0" prefWidth="460.0" style="-fx-background-color: FFFFFF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.MainForm">
+   <children>
+      <VBox prefHeight="98.0" prefWidth="460.0" style="-fx-background-color: EE2E12;">
+         <children>
+            <Label fx:id="txx" alignment="CENTER" prefHeight="75.0" prefWidth="457.0" text="Librarian Tasks" textFill="WHITE">
+               <font>
+                  <Font name="Corbel Bold" size="19.0" />
+               </font>
+            </Label>
+            <Button alignment="BASELINE_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#HandleLogout" prefHeight="28.0" prefWidth="142.0" stylesheets="@st.css" text="Logout" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets left="390.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+      <HBox fx:id="hbox3" prefHeight="382.0" prefWidth="467.0">
+         <children>
+            <ImageView fitHeight="95.0" fitWidth="115.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@bookimage.jpg" />
+               </image>
+               <effect>
+                  <Reflection bottomOpacity="0.04" fraction="0.6" topOffset="-4.0" topOpacity="0.2" />
+               </effect>
+               <HBox.margin>
+                  <Insets top="60.0" />
+               </HBox.margin>
+            </ImageView>
+            <VBox prefHeight="217.0" prefWidth="153.0">
+               <children>
+                  <Button fx:id="btnListMember" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleListMemberButtonAction" prefHeight="53.0" prefWidth="154.0" stylesheets="@st.css" text="List Member" textFill="WHITE">
+                     <font>
+                        <Font name="Corbel Bold" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="25.0" top="25.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleSearchMemberButtonAction" prefHeight="52.0" prefWidth="153.0" stylesheets="@st.css" text="Checkout Book" textFill="#fffdfd">
+                     <font>
+                        <Font name="Corbel Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnFineRecords" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleFineRecordsButtonAction" prefHeight="52.0" prefWidth="153.0" stylesheets="@st.css" text="Fine Records" textFill="#fffdfd">
+                     <font>
+                        <Font name="Corbel Bold" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+               <HBox.margin>
+                  <Insets left="120.0" />
+               </HBox.margin>
+            </VBox>
+         </children></HBox>
+   </children>
+</VBox>

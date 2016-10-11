@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="678.0" prefWidth="493.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.BookForm">
+   <center>
+      <VBox prefHeight="604.0" prefWidth="493.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="title" maxWidth="400.0" prefHeight="25.0" prefWidth="314.0" promptText="Title" stylesheets="@st.css">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="30.0" right="20.0" top="10.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="isbn" maxWidth="400.0" promptText="ISBN" stylesheets="@st.css">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="30.0" right="20.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="author" editable="false" maxWidth="400.0" prefHeight="27.0" prefWidth="309.0" promptText="Authors" stylesheets="@st.css">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="30.0" right="20.0" />
+               </VBox.margin>
+            </TextField>
+            <HBox prefHeight="260.0" prefWidth="353.0">
+               <children>
+                  <VBox prefHeight="259.0" prefWidth="414.0">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="40.0" prefWidth="414.0" />
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <TextField fx:id="txtFirstName" promptText="First Name" stylesheets="@st2.css">
+                                 <HBox.margin>
+                                    <Insets bottom="7.0" />
+                                 </HBox.margin></TextField>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <TextField fx:id="txtLastName" promptText="Last Name" stylesheets="@st2.css">
+                                 <HBox.margin>
+                                    <Insets bottom="7.0" />
+                                 </HBox.margin></TextField>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <TextField fx:id="txtStreet" promptText="Street" stylesheets="@st2.css">
+                                 <HBox.margin>
+                                    <Insets bottom="7.0" />
+                                 </HBox.margin></TextField>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <TextField fx:id="txtCity" promptText="City" stylesheets="@st2.css">
+                                 <HBox.margin>
+                                    <Insets bottom="7.0" />
+                                 </HBox.margin></TextField>
+                           </children>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <TextField fx:id="txtState" promptText="State" stylesheets="@st2.css">
+                                 <HBox.margin>
+                                    <Insets bottom="7.0" />
+                                 </HBox.margin></TextField>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <TextField fx:id="txtZip" promptText="zip" stylesheets="@st2.css">
+                                 <HBox.margin>
+                                    <Insets bottom="7.0" />
+                                 </HBox.margin></TextField>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="95.0" prefWidth="414.0">
+                           <children>
+                              <TextField fx:id="txtPhone" promptText="Telephone No." stylesheets="@st2.css">
+                                 <HBox.margin>
+                                    <Insets bottom="7.0" />
+                                 </HBox.margin></TextField>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <TextField fx:id="credential" prefHeight="27.0" prefWidth="169.0" promptText="Credentials " stylesheets="@st2.css">
+                                 <HBox.margin>
+                                    <Insets bottom="7.0" />
+                                 </HBox.margin></TextField>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <TextField fx:id="bio" prefHeight="74.0" prefWidth="167.0" promptText="Short Biography" stylesheets="@st2.css">
+                                 <HBox.margin>
+                                    <Insets bottom="7.0" />
+                                 </HBox.margin></TextField>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <Button mnemonicParsing="false" onAction="#handleAddAuthorButtonAction" prefHeight="36.0" prefWidth="134.0" stylesheets="@st.css" text="Add Author" textFill="WHITE">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="140.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Corbel Bold" size="14.0" />
+               </font>
+            </Button>
+            <TextField fx:id="maxCheckoutLength" maxHeight="400.0" maxWidth="400.0" prefHeight="25.0" prefWidth="516.0" promptText="Maximum Checkout Length" stylesheets="@st.css">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="30.0" right="20.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="copyid" maxWidth="400.0" promptText="Copy Number" stylesheets="@st.css">
+               <VBox.margin>
+                  <Insets left="30.0" right="20.0" />
+               </VBox.margin>
+            </TextField>
+            <HBox prefHeight="0.0" prefWidth="493.0">
+               <children>
+                  <Button contentDisplay="CENTER" mnemonicParsing="false" onAction="#submitAction" prefHeight="37.0" prefWidth="123.0" stylesheets="@st.css" text="Submit" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets bottom="30.0" left="100.0" top="20.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Corbel Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleResetButtonAction" prefHeight="9.0" prefWidth="118.0" stylesheets="@st.css" text="Reset" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets left="30.0" top="20.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Corbel Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+   <top>
+      <VBox prefHeight="0.0" prefWidth="493.0" style="-fx-background-color: EE2E12;" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="txx" alignment="CENTER" prefHeight="36.0" prefWidth="463.0" text="Add Book" textFill="WHITE">
+               <font>
+                  <Font name="Corbel Bold" size="19.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </top>
+</BorderPane>

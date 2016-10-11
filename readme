@@ -1,0 +1,19 @@
+Peng Dong
+Framework: FRIModel FRItem(Prototype), FRCustomer(Template Pattern), FRDBFacade(Bridge Pattern), FRBooking(Observer Pattern, Mediator Pattern)
+Application: Intergrate the framework classes in application
+
+Wei Zhou
+Framework:Fine (Visitor), RentRecord(Visitor, Iterator)
+Application: search Fine records Page. System User (State)
+Documents: the model structural diagram, Framework class UML diagram in presentation documents(the first four pages).
+
+Tonghann Teng
+Framework: Security and Encrypt Password (Strategy, Adapter, Singleton), Serilization, Database Access (Facade)
+Application: The security package also provides developer with the ability to use the third party library for hashing.
+
+
+The security package can provides several strategy to hash the password with different hash methods.
+Developer can add their own hashing method,
+Developers can use session to retrieve information related to currently logged in user.
+It can dynamically cater to the developers' specific needs. 
+This framework's interface are easy to use for developers to extend it.

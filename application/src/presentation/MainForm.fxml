@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import java.net.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="633.0" prefWidth="595.0" style="-fx-background-color: FFFFFF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.MainForm">
+   <children>
+      <HBox fx:id="hbox3" alignment="CENTER" prefHeight="52.0" prefWidth="529.0" style="-fx-background-color: EE2E12;">
+         <children>
+            <Label text="Administration Tasks" textFill="WHITE">
+               <HBox.margin>
+                  <Insets left="30.0" top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children></HBox>
+      <HBox fx:id="hbox1" alignment="CENTER" prefHeight="168.0" prefWidth="595.0">
+         <children>
+            <Button fx:id="btnAddMember" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleAddMemberButtonAction" prefHeight="50.0" prefWidth="120.0" stylesheets="@st.css" text="Add Member" textFill="WHITE">
+               <HBox.margin>
+                  <Insets left="5.0" right="10.0" top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnEditMember" contentDisplay="CENTER" layoutX="127.0" layoutY="47.0" mnemonicParsing="false" onAction="#handleEditMemberButtonAction" prefHeight="50.0" prefWidth="120.0" stylesheets="@st.css" text="Edit Member" textFill="WHITE">
+               <HBox.margin>
+                  <Insets left="5.0" right="10.0" top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Button>
+            <Button fx:id="btnAddBook" mnemonicParsing="false" onAction="#handleAddBookButtonAction" prefHeight="50.0" stylesheets="@st.css" text="Add Book" textFill="WHITE">
+               <HBox.margin>
+                  <Insets left="5.0" right="10.0" top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnAddCopy" mnemonicParsing="false" onAction="#handleAddCopyButtonAction" prefHeight="50.0" stylesheets="@st.css" text="Add Copy" textFill="WHITE">
+               <HBox.margin>
+                  <Insets left="5.0" right="10.0" top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="56.0" prefWidth="595.0" style="-fx-background-color: EE2E12;">
+         <children>
+            <Label alignment="CENTER" text="Librarian Tasks" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="30.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+         <stylesheets>
+            <URL value="@st2.css" />
+            <URL value="@st.css" />
+         </stylesheets>
+         <VBox.margin>
+            <Insets bottom="10.0" top="10.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox fx:id="hbox2" alignment="CENTER" prefHeight="107.0" prefWidth="595.0">
+         <children>
+            <Button fx:id="btnListMember" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleListMemberButtonAction" prefHeight="50.0" prefWidth="135.0" stylesheets="@st.css" text="List Member" textFill="WHITE">
+               <HBox.margin>
+                  <Insets left="5.0" right="10.0" top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleSearchMemberButtonAction" prefHeight="50.0" prefWidth="195.0" stylesheets="@st.css" text="Checkout/Checkin Book" textFill="WHITE">
+               <HBox.margin>
+                  <Insets left="5.0" right="10.0" top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnFineRecords" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleFineRecordsButtonAction" prefHeight="50.0" prefWidth="153.0" stylesheets="@st.css" text="Fine Records" textFill="#fffdfd">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="5.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+         <VBox.margin>
+            <Insets top="40.0" />
+         </VBox.margin>
+      </HBox>
+      <ImageView fitHeight="173.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@bookimage.jpg" />
+         </image>
+         <VBox.margin>
+            <Insets top="20.0" />
+         </VBox.margin>
+      </ImageView>
+      <HBox prefHeight="10.0" prefWidth="529.0" style="-fx-background-color: EE2E12;">
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+      </HBox>
+   </children>
+</VBox>

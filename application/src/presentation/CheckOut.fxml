@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxWidth="672.0" minWidth="500.0" prefHeight="671.0" prefWidth="590.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.CheckOut">
+  <!-- TODO Add Nodes -->
+  <children>
+      <VBox layoutX="6.0" prefHeight="728.0" prefWidth="589.0">
+         <children>
+            <VBox maxWidth="582.0" minWidth="582.0" prefHeight="57.0" prefWidth="582.0" style="-fx-background-color: EE2E12;">
+               <children>
+              <Label alignment="CENTER" contentDisplay="CENTER" maxWidth="550.0" prefHeight="27.0" prefWidth="804.0" text="Book checkin, Checkout form" textFill="WHITE">
+                <font>
+                  <Font name="System Bold" size="18.0" />
+                </font>
+              </Label>
+
+               </children>
+            </VBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <VBox prefHeight="94.0" prefWidth="242.0">
+                     <children>
+                    <TextField fx:id="mem_id" prefHeight="24.0" prefWidth="132.0" promptText="Member ID" stylesheets="@st.css" />
+                        <Label fx:id="memberName">
+                           <font>
+                              <Font name="Corbel Bold" size="13.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="5.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="50.0" />
+                     </HBox.margin>
+                  </VBox>
+              <Button mnemonicParsing="false" onAction="#handleSearchMem" prefHeight="40.0" prefWidth="120.0" stylesheets="@st.css" text="Search" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="30.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="37.0" prefWidth="800.0">
+               <children>
+              <Label alignment="BOTTOM_LEFT" prefHeight="30.0" prefWidth="322.0" text="Checkout Records">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <padding>
+                        <Insets left="30.0" />
+                     </padding>
+                  </Label>
+                  <Button fx:id="finerecords" mnemonicParsing="false" onAction="#checkFineRecords" prefHeight="30.0" prefWidth="120.0" stylesheets="@st.css" text="Fine Records" textFill="WHITE" visible="false">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#printToConsole" prefHeight="30.0" prefWidth="80.0" stylesheets="@st.css" text="Print" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets left="30.0" />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets left="40.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </HBox>
+        <TableView fx:id="checkout_records" maxWidth="582.0" minWidth="400.0" prefHeight="170.0" prefWidth="582.0">
+          <columns>
+            <TableColumn fx:id="title" maxWidth="5000.0" minWidth="10.0" prefWidth="124.0" text="Book Title" />
+            <TableColumn fx:id="checkout_date" maxWidth="5000.0" minWidth="10.0" prefWidth="158.0" text="Checkout Date" />
+            <TableColumn fx:id="due_date" maxWidth="5000.0" minWidth="10.0" prefWidth="131.0" text="Due Date" />
+                  <TableColumn fx:id="rtstatus" prefWidth="165.0" text="Returned Date" />
+          </columns>
+        </TableView>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+              <TextField fx:id="isbn_num" prefWidth="200.0" promptText=" Book ISBN" stylesheets="@st.css">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <padding>
+                        <Insets right="20.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets left="50.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Button mnemonicParsing="false" onAction="#handleSearchBookCopy" prefHeight="40.0" prefWidth="110.0" stylesheets="@st.css" text="Search" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets left="30.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets top="20.0" />
+               </padding>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <VBox prefHeight="140.0" prefWidth="803.0">
+                     <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label alignment="BASELINE_RIGHT" contentDisplay="CENTER" prefHeight="20.0" prefWidth="252.0" text="ISBN" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label text="        :       " />
+                              <Label fx:id="isbn" alignment="TOP_LEFT" prefHeight="17.0" prefWidth="100.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label alignment="BASELINE_RIGHT" contentDisplay="RIGHT" prefHeight="20.0" prefWidth="251.0" text="ID" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label text="        :       " />
+                              <Label fx:id="bid" alignment="TOP_LEFT" prefHeight="17.0" prefWidth="150.0" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label alignment="BASELINE_RIGHT" contentDisplay="CENTER" prefHeight="20.0" prefWidth="254.0" text="Title" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label text="       :       " />
+                              <Label fx:id="btitle" alignment="TOP_LEFT" prefHeight="17.0" prefWidth="206.0" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label alignment="BASELINE_RIGHT" contentDisplay="CENTER" prefHeight="20.0" prefWidth="252.0" text="Popular" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label text="        :       " />
+                              <Label fx:id="popular" alignment="TOP_LEFT" prefHeight="17.0" prefWidth="100.0" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label alignment="BASELINE_RIGHT" contentDisplay="CENTER" prefHeight="20.0" prefWidth="252.0" text="Author" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label text="        :       " />
+                              <Label fx:id="author" alignment="TOP_LEFT" prefHeight="17.0" prefWidth="212.0" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="53.0" prefWidth="546.0">
+                           <children>
+                              <Label alignment="BASELINE_RIGHT" contentDisplay="CENTER" prefHeight="20.0" prefWidth="255.0" text="Copy Num" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label text="        :       " />
+                              <Label fx:id="copynum" alignment="TOP_LEFT" prefHeight="17.0" prefWidth="100.0" />
+                           </children>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="130.0" prefHeight="53.0" prefWidth="546.0">
+                           <children>
+                              <Label alignment="BASELINE_RIGHT" contentDisplay="CENTER" prefHeight="20.0" prefWidth="255.0" text="Available num" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label text="        :       " />
+                              <Label fx:id="availablenum" alignment="TOP_LEFT" prefHeight="17.0" prefWidth="100.0" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox fillHeight="false" prefHeight="240.0" prefWidth="589.0">
+               <children>
+                  <Button fx:id="checkin" mnemonicParsing="false" onAction="#handleCheckin" prefHeight="40.0" prefWidth="130.0" stylesheets="@st.css" text="Check In" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets left="20.0" right="30.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+              <Button mnemonicParsing="false" onAction="#handleDoneButtonAction" prefHeight="40.0" prefWidth="130.0" stylesheets="@st.css" text="Done" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets right="30.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+              <Button mnemonicParsing="false" onAction="#handleCheckOutButton" prefHeight="40.0" prefWidth="130.0" stylesheets="@st.css" text="Check Out" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets right="30.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+              <Button mnemonicParsing="false" onAction="#handleResetButtonAction" prefHeight="40.0" prefWidth="60.0" stylesheets="@st.css" text="Clear" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+  </children>
+</AnchorPane>

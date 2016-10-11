@@ -1,0 +1,13 @@
+Singleton Booking class
+Visitor FineEntry
+Observer Booking
+Template FRCustomer
+Strategy Admin encrypt password
+FRIModel FRItem(Prototype)
+Facade Database access
+Factory Create Book&Magazin
+Iterator FineRecords
+Bridge FRIModel Save
+State Admin(Admin&Librarian different state)
+Adapter Admin password hash
+FRBooking (Mediator Pattern)

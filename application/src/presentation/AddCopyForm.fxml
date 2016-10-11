@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="441.0" prefWidth="546.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.AddCopyForm">
+   <children>
+      <VBox prefHeight="81.0" prefWidth="547.0" style="-fx-background-color: EE2E12;">
+         <children>
+            <Label fx:id="txx" alignment="CENTER" prefHeight="56.0" prefWidth="547.0" text="Add Book Copy" textFill="WHITE">
+               <font>
+                  <Font name="Corbel Bold" size="19.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <HBox>
+         <children>
+            <Region nodeOrientation="LEFT_TO_RIGHT" HBox.hgrow="ALWAYS" />
+            <Label prefHeight="25.0" prefWidth="41.0">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font></Label>
+            <TextField fx:id="isbnText" prefHeight="40.0" prefWidth="279.0" promptText="Book ISBN ">
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="14.0" />
+               </font></TextField>
+            <Button mnemonicParsing="false" onAction="#handleSearchButtonAction" prefHeight="40.0" prefWidth="120.0" stylesheets="@st.css" text="Search" textFill="WHITE">
+               <font>
+                  <Font name="Corbel Bold" size="14.0" />
+               </font></Button>
+            <Region HBox.hgrow="ALWAYS" />
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <VBox.margin>
+            <Insets top="30.0" />
+         </VBox.margin>
+      </HBox>
+      <VBox prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label alignment="BASELINE_RIGHT" contentDisplay="CENTER" prefHeight="20.0" prefWidth="252.0" text="ISBN" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></Label>
+                  <Label text="        :       " />
+                  <Label fx:id="isbn" alignment="TOP_LEFT" prefHeight="17.0" prefWidth="100.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+               </children>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label alignment="BASELINE_RIGHT" contentDisplay="RIGHT" prefHeight="20.0" prefWidth="251.0" text="ID" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></Label>
+                  <Label text="        :       " />
+                  <Label fx:id="bid" alignment="TOP_LEFT" prefHeight="17.0" prefWidth="150.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label alignment="BASELINE_RIGHT" contentDisplay="CENTER" prefHeight="20.0" prefWidth="254.0" text="Title" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></Label>
+                  <Label text="       :       " />
+                  <Label fx:id="title" alignment="TOP_LEFT" prefHeight="17.0" prefWidth="206.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label alignment="BASELINE_RIGHT" contentDisplay="CENTER" prefHeight="20.0" prefWidth="252.0" text="Popular" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></Label>
+                  <Label text="        :       " />
+                  <Label fx:id="popular" alignment="TOP_LEFT" prefHeight="17.0" prefWidth="100.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label alignment="BASELINE_RIGHT" contentDisplay="CENTER" prefHeight="20.0" prefWidth="252.0" text="Author" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></Label>
+                  <Label text="        :       " />
+                  <Label fx:id="author" alignment="TOP_LEFT" prefHeight="17.0" prefWidth="212.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="53.0" prefWidth="546.0">
+               <children>
+                  <Label alignment="BASELINE_RIGHT" contentDisplay="CENTER" prefHeight="20.0" prefWidth="255.0" text="CopyNum" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></Label>
+                  <Label text="        :       " />
+                  <Label fx:id="copynum" alignment="TOP_LEFT" prefHeight="17.0" prefWidth="100.0" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <HBox alignment="CENTER" prefHeight="87.0" prefWidth="546.0">
+         <children>
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#handleAddButtonAction" prefHeight="42.0" prefWidth="121.0" stylesheets="@st.css" text="Add copy" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Button>
+         </children>
+      </HBox>
+      <Pane prefHeight="11.0" prefWidth="546.0" style="-fx-background-color: EE2E12;" />
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</VBox>

@@ -1,0 +1,5 @@
+This is just a taste of the Library Project,
+but it gives samples of how to work with
+object serialization for persisting data.
+This approach is easy to generalize for
+the whole project.

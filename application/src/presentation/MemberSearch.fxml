@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<VBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.MemberSearch">
+   <children>
+      <VBox prefHeight="58.0" prefWidth="414.0" style="-fx-background-color: EE2E12;">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" text="Edit Library Member to System" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="80.0" top="20.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+         <VBox.margin>
+            <Insets bottom="15.0" />
+         </VBox.margin>
+      </VBox>
+      <HBox>
+         <children>
+            <Label fx:id="lblMemberID" alignment="CENTER" contentDisplay="CENTER" prefHeight="16.0" prefWidth="92.0" text="Member ID">
+               <opaqueInsets>
+                  <Insets top="5.0" />
+               </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="V_RESIZE" />
+               </cursor>
+               <padding>
+                  <Insets top="5.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets top="5.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtMemberID" alignment="TOP_LEFT" prefHeight="26.0" prefWidth="127.0" promptText="Please enter the Member Id" HBox.hgrow="ALWAYS">
+               <padding>
+                  <Insets left="5.0" top="5.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets top="5.0" />
+               </HBox.margin>
+            </TextField>
+            <Pane prefHeight="37.0" prefWidth="32.0" HBox.hgrow="ALWAYS" />
+         </children>
+         <VBox.margin>
+            <Insets bottom="10.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox prefHeight="8.0" prefWidth="414.0" style="-fx-background-color: EE2E12;">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: EE2E12;" />
+         </children>
+         <VBox.margin>
+            <Insets bottom="15.0" />
+         </VBox.margin></HBox>
+      <HBox alignment="CENTER" prefHeight="69.0" prefWidth="414.0">
+         <children>
+            <Button minWidth="-Infinity" mnemonicParsing="false" onAction="#btnSearchClicked" prefHeight="50.0" prefWidth="100.0" stylesheets="@st.css" text="Search" textFill="WHITE">
+               <HBox.margin>
+                  <Insets bottom="10.0" right="10.0" top="10.0" />
+               </HBox.margin></Button>
+         </children>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </HBox>
+      <VBox>
+         <children>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="50.0">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="98.0" text="Member ID">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font></Label>
+                  <TextField fx:id="txtmember_id" disable="true">
+                     <HBox.margin>
+                        <Insets bottom="5.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="98.0" text="First Name">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font></Label>
+                  <TextField fx:id="txtFirstName">
+                     <HBox.margin>
+                        <Insets bottom="5.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="98.0" text="Last Name">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font></Label>
+                  <TextField fx:id="txtLastName">
+                     <HBox.margin>
+                        <Insets bottom="5.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="98.0" text="Street">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font></Label>
+                  <TextField fx:id="txtStreet">
+                     <HBox.margin>
+                        <Insets bottom="5.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="98.0" text="City">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font></Label>
+                  <TextField fx:id="txtCity">
+                     <HBox.margin>
+                        <Insets bottom="5.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="98.0" text="State">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font></Label>
+                  <TextField fx:id="txtState">
+                     <HBox.margin>
+                        <Insets bottom="5.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="98.0" text="zip">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font></Label>
+                  <TextField fx:id="txtZip">
+                     <HBox.margin>
+                        <Insets bottom="5.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="98.0" text="Telephone No.">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font></Label>
+                  <TextField fx:id="txtPhone">
+                     <HBox.margin>
+                        <Insets bottom="5.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button minWidth="-Infinity" mnemonicParsing="false" onAction="#handleSubmitButtonAction" prefHeight="50.0" prefWidth="100.0" stylesheets="@st.css" text="Submit" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets bottom="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button minWidth="-Infinity" mnemonicParsing="false" onAction="#handleResetButtonAction" prefHeight="50.0" prefWidth="100.0" stylesheets="@st.css" text="Reset" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets bottom="10.0" right="10.0" top="10.0" />
+                     </HBox.margin></Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <HBox prefHeight="14.0" prefWidth="414.0" style="-fx-background-color: EE2E12;" />
+   </children>
+</VBox>

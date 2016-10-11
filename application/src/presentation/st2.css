@@ -1,0 +1,8 @@
+.text-field
+{
+	-fx-pref-width: 180pt;
+	-fx-pref-height: 25pt;
+	   -fx-font-size: 13px;
+	   -fx-alignment: center;
+
+}
